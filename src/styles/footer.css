@@ -1,0 +1,54 @@
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 173, 238, 0); /* Same background as body */
+    color: black; /* Change text color to black */
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: black; /* Change footer links to black */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white; /* Keep hover color */
+}
+
+/* Footer container with flexbox for balanced layout */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Spaces out items evenly */
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the footer horizontally */
+    padding: 0 2rem;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.footer-item {
+    flex: 1 1 30%; /* Makes each item take up 30% of the container */
+    margin: 1rem 0; /* Adds spacing between items */
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+}
+
+.svg_images i {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: black; /* Change icon color to black */
+    transition: color 0.3s ease;
+}
+
+.svg_images i:hover {
+    color: white; /* Change icon color on hover */
+}

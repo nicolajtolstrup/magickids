@@ -1,0 +1,140 @@
+/* Global Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 173, 238, 0.17); /* #00ADEE with 17% opacity */
+    color: black; /* Change text color to black */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Video container styling */
+.video-container {
+    position: relative;
+    width: 100%; /* Ensures the container spans the full width */
+    max-width: 100vw; /* Use full viewport width */
+    height: 70vh; /* Make the video larger (70% of viewport height) */
+    margin: 2rem auto; /* Centers the container with spacing */
+    overflow: hidden; /* Hides extra space around the iframe */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Ensures no visible borders around the iframe */
+}
+
+/* Boble Citat Image Styling */
+.boble-citat-container {
+    display: flex;
+    justify-content: center; /* Centers the container horizontally */
+    margin-top: 2rem; /* Adds space between the video and the image */
+}
+
+.boble-citat-image {
+    max-width: 80%;  /* Adjust width to 80% of the container */
+    width: auto;
+    height: auto;
+    display: block; /* Ensures the image is a block element for better centering */
+}
+
+/* Image Grid Styling */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 1rem; /* Spacing between images */
+    justify-items: center; /* Centers images within their grid cells */
+    margin-top: 2rem;
+    max-width: 80%; /* Limit the width of the grid */
+    margin-left: auto; /* Center the grid horizontally */
+    margin-right: auto;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Adjust size to fit better */
+    border-radius: 8px; /* Optional, for rounded corners */
+}
+
+/* Citat2 Image Styling */
+.citat2-container {
+    display: flex;
+    justify-content: center; /* Centers the container horizontally */
+    margin-top: 2rem; /* Adds space between the previous content and this image */
+}
+
+.citat2-image {
+    max-width: 80%;  /* Adjust width to match boble_citat.png */
+    width: auto;
+    height: auto;
+    display: block; /* Ensures the image is a block element for better centering */
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 173, 238, 0); /* Same background as body */
+    color: black; /* Change text color to black */
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: black; /* Change footer links to black */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffcc00; /* Keep hover color */
+}
+
+/* Footer container with flexbox for balanced layout */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Spaces out items evenly */
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the footer horizontally */
+    padding: 0 2rem;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.svg_images i {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: black; /* Change icon color to black */
+    transition: color 0.3s ease;
+}
+
+.svg_images i:hover {
+    color: #ffcc00; /* Change icon color on hover */
+}
+
+/* Styling for social media icons */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+/* Footer Copyright */
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align to the left */
+    flex-grow: 1;
+}
+
+.footer-copyright p,
+.footer-copyright span {
+    margin: 0;
+}
+
+.footer-bottom .footer-copyright span {
+    margin-left: 10px;
+}

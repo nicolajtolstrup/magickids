@@ -1,0 +1,45 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Henny from "../components/Henny.astro";
+import BobleCitat from "../components/Boble_citat.astro";
+import '../styles/global.css';  // Import global CSS styles
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/mkfavicon.svg" />  <!-- Updated favicon -->
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <Header />
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/uuwPcDkKSYI?autoplay=1&mute=0&loop=1&playlist=uuwPcDkKSYI&controls=0"
+        width="100%"
+        height="100%"
+        frameborder="0"
+        allow="autoplay; encrypted-media "
+        allowfullscreen
+        title="Video"
+      ></iframe>
+    </div>
+
+    <!-- Boble Citat Image (Now a Component) -->
+    <BobleCitat /> <!-- Added the BobleCitat component here -->
+
+    <!-- Image Grid Section under the Video -->
+    <Henny />  <!-- Henny component for the image grid -->
+
+    <!-- Citat2 Image -->
+    <div class="citat2-container">
+      <img src="/public/citat2.png" alt="Citat 2" class="citat2-image" />
+    </div>
+
+    <Footer />
+  </body>
+</html>
