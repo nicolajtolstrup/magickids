@@ -1,0 +1,19 @@
+---
+// Henny.astro Component: The image grid
+const images = [
+  "/henny.png", "/henny.png", "/henny.png", // Row 1
+  "/henny.png", "/henny.png", "/henny.png"  // Row 2
+];
+---
+
+<div class="image-grid">
+  {images.map(image => (
+    <div class="image-item">
+      <img src={image} alt="Henny Image" />
+      <div class="image-caption">
+        <h3>Henny Solskin</h3>
+        <p>“Henny solskin en ægte solstråle”</p>
+      </div>
+    </div>
+  ))}
+</div>
